@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="com.yangss.model.Student" table="student">
+  <id column="id" length="11" name="id" type="int"/>
+  <property column="name" name="name" type="string"/>
+  <property column="sex" name="sex" type="int"/>
+  <property column="age" name="age" type="int"/>
+  <property column="idcard" name="idcard" type="string"/>
+  <property column="create_time" name="createTime" type="timestamp"/>
+  <property column="update_time" name="updateTime" type="timestamp"/>
+ </class>
+</hibernate-mapping>
